@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+  <title>Cameron Brennan!</title>
+  <link href="normalize.css" rel="stylesheet" />
+  <style>
+    header {
+      text-align: center;
+      background-image: url("assets/DBC-bg.JPG");
+      background-size: cover;
+      background-position: 50% 35%;
+      color: white;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+    }
+    body {
+      font-family: baskerville;
+      background: -webkit-linear-gradient(
+        top,
+        rgba(137, 196, 244, 1),
+        rgba(0, 0, 0, 0.45)
+      );
+      background: -moz-linear-gradient(
+        top,
+        rgba(137, 196, 244, 1),
+        rgba(0, 0, 0, 0.45)
+      );
+    }
+    h1 {
+      font-size: 60px;
+      margin: 60 0 40 0;
+    }
+    h2 {
+      font-size: 35px;
+      margin: 60 0 40 0;
+    }
+    img {
+      margin: 40px 0 0 0;
+      border: 10px solid black;
+      border-radius: 20px;
+      marcin: 0 auto;
+    }
+    ul {
+      padding: 10px;
+      background: -webkit-linear-gradient(
+        bottom,
+        rgba(0, 0, 0, 1),
+        rgba(30, 139, 195, 0.45)
+      );
+      background: -moz-linear-gradient(
+        top,
+        rgba(0, 0, 0, 1),
+        rgba(30, 139, 195, 0.45)
+      );
+    }
+    a {
+      color: white;
+    }
+    li {
+      display: inline;
+      padding-left: 15px;
+      padding-right: 15px;
+      color: rgba(255, 255, 255, 1);
+      text-shadow: rgba(0, 0, 0, 0.8);
+    }
+    p {
+      font-size: 18px;
+      max-width: 650px;
+      margin: 0 auto;
+      text-align: justify;
+    }
+    .button {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+    <img src="assets/ProfilePic.jpeg" width="300" height="300" />
+    <h1>Cameron Brennan</h1>
+    <h2>Software Developer</h2>
+    <ul class="nav">
+      <li id="home" class="button"><a href='#'>Home</a></li>
+      <li id="contact" class="button"><a href="#">Contact</a></li>
+    </ul>
+  </header>
+  <img src="assets/Portrait.jpg" width="800" height="800" size="cover" />
+  <h1>Let's Work Together!</h1>
+  <h2>xero.yorke@gmail.com</h2>
+  <h2>213.318.8815</h2>
+  <h2>/in/the-cameron-brennan</h2>
+</body>
+
+<script>
+  document.getElementById("home").onclick = () => {
+    window.open("Cameron Brennan.html");
+  };
+  document.getElementById("contact").onclick = () => {
+    window.open("/contact info page.html");
+  };
+</script>
