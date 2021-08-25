@@ -13,6 +13,7 @@
     }
     body {
       font-family: baskerville;
+      margin: 0 auto;
       background: -webkit-linear-gradient(
         top,
         rgba(137, 196, 244, 1),
@@ -26,19 +27,17 @@
     }
     h1 {
       font-size: 60px;
-      margin: 60 0 40 0;
+      margin: 0 auto;
     }
     h2 {
       font-size: 35px;
-      margin: 60 0 40 0;
     }
     img {
       margin: 40px 0 0 0;
       border: 10px solid black;
       border-radius: 20px;
-      marcin: 0 auto;
     }
-    ul {
+    .nav {
       padding: 10px;
       background: -webkit-linear-gradient(
         bottom,
@@ -61,6 +60,12 @@
       color: rgba(255, 255, 255, 1);
       text-shadow: rgba(0, 0, 0, 0.8);
     }
+    article {
+      max-width 500px;
+      padding: 20px;
+      margin: 0 auto;
+      text-align: center;
+    }
     p {
       font-size: 18px;
       max-width: 650px;
@@ -74,27 +79,35 @@
 </head>
 
 <body>
-    <header>
+  <header>
     <img src="assets/ProfilePic.jpeg" width="300" height="300" />
     <h1>Cameron Brennan</h1>
     <h2>Software Developer</h2>
-    <ul class="nav">
-      <li id="home" class="button"><a href='#'>Home</a></li>
-      <li id="contact" class="button"><a href="#">Contact</a></li>
-    </ul>
+    <nav id="nav">
+      <ul class="nav">
+        <li id="home" class="button"><a href="#">Home</a></li>
+        <li id="contact" class="button"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  <img src="assets/Portrait.jpg" width="800" height="800" size="cover" />
-  <h1>Let's Work Together!</h1>
-  <h2>xero.yorke@gmail.com</h2>
-  <h2>213.318.8815</h2>
-  <h2>/in/the-cameron-brennan</h2>
+  <article>
+    <h1>Let's Work Together!</h1>
+    <h2><a href="mailto: xero.yorke@gmail.com">xero.yorke@gmail.com</a></h2>
+    <h2><span style="color: white">213.318.8815</span></h2>
+    <h2>
+      <a href="https://www.linkedin.com/in/the-cameron-brennan/"
+        >/in/the-cameron-brennan</a
+      >
+    </h2>
+    <h2><a href='https://github.com/cameronbrennan'>github.com/cameronbrennan</a></h2>
+  </article>
 </body>
 
 <script>
   document.getElementById("home").onclick = () => {
-    window.open("index.html");
+    window.open("index.html", "_self");
   };
   document.getElementById("contact").onclick = () => {
-    window.open("/contact.html");
+    window.open("contact.html", "_self");
   };
 </script>
